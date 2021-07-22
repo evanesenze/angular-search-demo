@@ -1,0 +1,9 @@
+<app-history [items]="items" [hideHistory]="hideHistory"></app-history>
+<content class="content">
+  <app-search-item (doSearch)="doSearch($event)" (activeBtn)="toggleHistory($event)" [newQuery]="newQuery"></app-search-item>
+  <app-results-item [result]="result"></app-results-item>
+  <app-pages-list [result]="result" (switchPage)="switchPage($event)"></app-pages-list>
+</content>
+
+
+

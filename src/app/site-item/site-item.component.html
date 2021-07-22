@@ -1,0 +1,6 @@
+<div class="site-title">
+    <img src="../assets/wiki2.svg" width="25" class="site-ico" alt="">
+    <a href="https://ru.wikipedia.org/wiki/{{item?.title}}" class="site-href" target="_blank">{{item?.title}}</a>
+</div>
+<div [innerHTML]="item?.snippet" class="site-inner"></div>
+<div class="site-time">Обновлена: {{item?.timestamp}}</div>

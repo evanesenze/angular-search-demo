@@ -1,0 +1,18 @@
+<div class="search">
+  <div class="search-inner">
+    <div class="title">
+      <h1 class="title-inner">
+        <span class="blue">S</span><span class="red">e</span><span class="orange">a</span><span class="blue">r</span><span class="green">c</span><span class="red">h</span>
+      </h1>
+    </div>
+    <div class="input">
+      <div class="input-inner">
+        <label><img src="assets/ico.svg" alt="" width="20"><input></label>
+      </div>
+      <div class="history">
+        <div class="history-btn"><img src="assets/history.svg" alt="" width="15"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-utils-item [totalhits]="totalhits" (newSrsort)="newSrsort($event)"></app-utils-item>

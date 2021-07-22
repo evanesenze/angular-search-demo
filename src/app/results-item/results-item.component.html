@@ -1,0 +1,8 @@
+<div class="results">
+  <ul class="list-sites">
+    <li *ngFor="let item of res" class="site-item">
+      <app-site-item [item]="item"></app-site-item>
+    </li>
+  </ul>
+  <div *ngIf="!res" class="new">Введите ваш запрос</div>
+</div>
